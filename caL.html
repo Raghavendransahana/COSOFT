@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="caL.css">
+</head>
+<body>
+    <div class="calculator">
+        <input class='result' placeholder="0" id="result">
+        <div class="calculator-buttons">
+            <button class="calc-button is-clear" onclick="clearInput()">C</button>
+            <button class="calc-button divide" value="/" onclick="dontRepeat('/')">/</button>
+            
+            <button class="calc-button seven" value="7" onclick="appendValue('7')">7</button>
+            <button class="calc-button eight" value="8" onclick="appendValue('8')">8</button>
+            <button class="calc-button nine" value="9" onclick="appendValue('9')">9</button>
+            <button class="calc-button times" value="*" onclick="dontRepeat('*')">&times;</button>
+            
+            <button class="calc-button four" value="4" onclick="appendValue('4')">4</button>
+            <button class="calc-button five" value="5" onclick="appendValue('5')">5</button>
+            <button class="calc-button six" value="6" onclick="appendValue('6')">6</button>
+            <button class="calc-button minus" value="-" onclick="dontRepeat('-')">&minus;</button>
+            
+            <button class="calc-button one" value="1" onclick="appendValue('1')">1</button>
+            <button class="calc-button two" value="2" onclick="appendValue('2')">2</button>
+            <button class="calc-button three" value="3" onclick="appendValue('3')">3</button>
+            <button class="calc-button plus" value="+" onclick="dontRepeat('+')">&plus;</button>
+            
+            <button class="calc-button is-zero" value="0" onclick="appendValue('0')">0</button>
+            <button class="calc-button comma" value="." onclick="appendComma()">.</button>
+            <button class="calc-button is-equals" onclick="calculateResult()">&equals;</button>
+        </div>
+    </div>
+    <script src="caL.js"></script>
+</body>
+</html>
